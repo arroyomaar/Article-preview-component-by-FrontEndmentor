@@ -1,0 +1,30 @@
+@mixin reinicio_navegador(){
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    img{
+        width: 100%;
+        height: 100%;
+    }    
+}
+@mixin center_box_father(){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@mixin body_configuracion($tipografia,$font_size,$font_weigth){
+    body{
+        height: 100%;
+        width: 100%;
+        font-family: $tipografia, sans-serif;
+        font-size: $font_size;
+        font-weight: $font_weigth;
+    }    
+}
+    @mixin with_heigth($width,$height,$border-radius){
+        width: $width;
+        height: $height;
+        border-radius: $border-radius;
+    }
